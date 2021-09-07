@@ -133,9 +133,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEV-hV-cy4">
-                                <rect key="frame" x="88" y="123" width="145" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEV-hV-cy4">
+                                <rect key="frame" x="134" y="271" width="52" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -143,6 +142,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lE7-yQ-FYP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wEV-hV-cy4" firstAttribute="centerX" secondItem="4qw-cn-Ser" secondAttribute="centerX" id="3mz-aN-YKB"/>
+                            <constraint firstItem="wEV-hV-cy4" firstAttribute="centerY" secondItem="4qw-cn-Ser" secondAttribute="centerY" id="I0s-rF-EZC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ist-AP-gGh"/>
                     <connections>

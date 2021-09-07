@@ -26,8 +26,28 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "showVC", sender: "Hey from A")
     }
     
-    @IBAction func funcAction(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showVC" {
+            if let vc = segue.destination as? SegueViewController {
+                guard let text = sender as? String else { return }
+                vc.text = text
+            }
+        }
     }
+    
+    
+    
+    @IBAction func funcAction(_ sender: Any) {
+        let vc = FunctionViewController()
+        vc.viewController = self
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func onUserAction(data: String) {
+        print("Data received: \(data)")
+    }
+    
     
     @IBAction func delegateAction(_ sender: Any) {
     }
