@@ -17,6 +17,12 @@
 		450B006626E7F7AD001C3706 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450B006526E7F7AD001C3706 /* SegueViewController.swift */; };
 		450B006926E80121001C3706 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450B006726E80121001C3706 /* FunctionViewController.swift */; };
 		450B006A26E80121001C3706 /* FunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450B006826E80121001C3706 /* FunctionViewController.xib */; };
+		4598A83226E85C6300549BD1 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4598A83026E85C6300549BD1 /* DelegateViewController.swift */; };
+		4598A83326E85C6300549BD1 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4598A83126E85C6300549BD1 /* DelegateViewController.xib */; };
+		4598A83626E85FFD00549BD1 /* ClouserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4598A83426E85FFD00549BD1 /* ClouserViewController.swift */; };
+		4598A83726E85FFD00549BD1 /* ClouserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4598A83526E85FFD00549BD1 /* ClouserViewController.xib */; };
+		4598A83A26E8647600549BD1 /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4598A83826E8647600549BD1 /* NSViewController.swift */; };
+		4598A83B26E8647600549BD1 /* NSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4598A83926E8647600549BD1 /* NSViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		450B006526E7F7AD001C3706 /* SegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
 		450B006726E80121001C3706 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		450B006826E80121001C3706 /* FunctionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionViewController.xib; sourceTree = "<group>"; };
+		4598A83026E85C6300549BD1 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		4598A83126E85C6300549BD1 /* DelegateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
+		4598A83426E85FFD00549BD1 /* ClouserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClouserViewController.swift; sourceTree = "<group>"; };
+		4598A83526E85FFD00549BD1 /* ClouserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClouserViewController.xib; sourceTree = "<group>"; };
+		4598A83826E8647600549BD1 /* NSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewController.swift; sourceTree = "<group>"; };
+		4598A83926E8647600549BD1 /* NSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +79,14 @@
 				450B004F26E7EC9D001C3706 /* AppDelegate.swift */,
 				450B005126E7EC9D001C3706 /* SceneDelegate.swift */,
 				450B005326E7EC9D001C3706 /* ViewController.swift */,
+				4598A83426E85FFD00549BD1 /* ClouserViewController.swift */,
+				4598A83526E85FFD00549BD1 /* ClouserViewController.xib */,
+				4598A83026E85C6300549BD1 /* DelegateViewController.swift */,
+				4598A83126E85C6300549BD1 /* DelegateViewController.xib */,
 				450B006726E80121001C3706 /* FunctionViewController.swift */,
 				450B006826E80121001C3706 /* FunctionViewController.xib */,
+				4598A83826E8647600549BD1 /* NSViewController.swift */,
+				4598A83926E8647600549BD1 /* NSViewController.xib */,
 				450B005526E7EC9D001C3706 /* Main.storyboard */,
 				450B006526E7F7AD001C3706 /* SegueViewController.swift */,
 				450B006326E7EFC7001C3706 /* PushViewController.swift */,
@@ -136,10 +154,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4598A83726E85FFD00549BD1 /* ClouserViewController.xib in Resources */,
 				450B006A26E80121001C3706 /* FunctionViewController.xib in Resources */,
 				450B005C26E7EC9F001C3706 /* LaunchScreen.storyboard in Resources */,
+				4598A83B26E8647600549BD1 /* NSViewController.xib in Resources */,
 				450B005926E7EC9F001C3706 /* Assets.xcassets in Resources */,
 				450B005726E7EC9D001C3706 /* Main.storyboard in Resources */,
+				4598A83326E85C6300549BD1 /* DelegateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +173,10 @@
 			files = (
 				450B006926E80121001C3706 /* FunctionViewController.swift in Sources */,
 				450B005426E7EC9D001C3706 /* ViewController.swift in Sources */,
+				4598A83626E85FFD00549BD1 /* ClouserViewController.swift in Sources */,
 				450B005026E7EC9D001C3706 /* AppDelegate.swift in Sources */,
+				4598A83A26E8647600549BD1 /* NSViewController.swift in Sources */,
+				4598A83226E85C6300549BD1 /* DelegateViewController.swift in Sources */,
 				450B006426E7EFC7001C3706 /* PushViewController.swift in Sources */,
 				450B006626E7F7AD001C3706 /* SegueViewController.swift in Sources */,
 				450B005226E7EC9D001C3706 /* SceneDelegate.swift in Sources */,

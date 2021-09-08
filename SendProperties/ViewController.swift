@@ -6,13 +6,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+protocol ItemReadyDelegate {
+    func itemReady(type: String)
+}
 
+
+class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+        NotificationCenter.default.addObserver(self, selector: #selector(onNotification(notification:)), name: ViewController.notificationName, object: nil)
+    }
+    
     
     @IBAction func pushAction(_ sender: Any) {
         let storyB = UIStoryboard(name: "Main", bundle: nil)
@@ -50,14 +56,42 @@ class ViewController: UIViewController {
     
     
     @IBAction func delegateAction(_ sender: Any) {
+        let vc = DelegateViewController()
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func clouserAction(_ sender: Any) {
+        
+        let vc = ClouserViewController()
+        
+        vc.complition = { text in
+            print("Text \(text)")
+        }
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
+    static let notificationName = Notification.Name("100FM")
+    
     @IBAction func notificationCenterAction(_ sender: Any) {
+        let vc = NSViewController()
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+
+        
+    }
+    
+    @objc func onNotification(notification: Notification) {
+        print(notification.userInfo)
     }
     
 }
 
+extension ViewController: ItemReadyDelegate {
+    func itemReady(type: String) {
+        print("Ready \(type)")
+    }
+}
