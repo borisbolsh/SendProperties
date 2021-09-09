@@ -2,7 +2,6 @@
 //  FunctionViewController.swift
 //  SendProperties
 //
-//  Created by Boris Bolshakov on 7.09.21.
 //
 
 import UIKit

@@ -2,7 +2,6 @@
 //  DelegateViewController.swift
 //  SendProperties
 //
-//  Created by Boris Bolshakov on 8.09.21.
 //
 
 import UIKit
